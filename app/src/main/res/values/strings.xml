@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NehaLabb01</string>
+    <string name="Submit">Button</string>
+    <string name="label1">NehaKeyyakandy</string>
+    <string name="full_name">full_name</string>
+
+    <string name="image_description">photo</string>
+
+</resources>
