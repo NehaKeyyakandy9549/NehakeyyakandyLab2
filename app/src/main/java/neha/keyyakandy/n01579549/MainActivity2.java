@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+import androidx.appcompat.widget.Toolbar;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -23,5 +25,15 @@ public class MainActivity2 extends AppCompatActivity {
 
         ImageView imageView = findViewById(R.id.displayImage);
         imageView.setImageResource(R.drawable.butterfly);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+        toolbar.setNavigationOnClickListener(v -> onBackPressed());
     }
-}
+
+    }
+
